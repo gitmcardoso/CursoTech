@@ -49,7 +49,7 @@
           que já transformaram suas carreiras
         </p>
       </div>
-      <div class="row text-center g-4">
+      <div class="row g-4">
         <div class="col-md-4">
           <div class="card h-100 border-0 shadow-lg">
             <div class="card-body">
@@ -82,26 +82,66 @@
         </div>
       </div>
     </section>
-    <script>
-      // Animação do contador de alunos
-      function animarContador(id, valorFinal, duracao) {
-        const elemento = document.getElementById(id);
-        let inicio = 0;
-        const incremento = Math.ceil(valorFinal / (duracao / 16));
-        const intervalo = setInterval(() => {
-          inicio += incremento;
-          if (inicio >= valorFinal) {
-            elemento.textContent = valorFinal.toLocaleString("pt-BR");
-            clearInterval(intervalo);
-          } else {
-            elemento.textContent = inicio.toLocaleString("pt-BR");
-          }
-        }, 16);
-      }
+    <section class="container my-5 py-5">
+      <h2 class="text-center mb-5">O que você vai aprender</h2>
+      <!-- Primeiro Card -->
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-header bg-primary text-white">
+              Módulo 1: HTML & CSS
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mb-0">
+                <li>Estrutura básica do HTML</li>
+                <li>Estilização do CSS</li>
+                <li>Layouts responsivos</li>
+                <li>Flexbox e Grid</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Segundo card -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-header bg-warning text-white">
+              Módulo 2: JavaScript
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mb-0">
+                <li>Fundamentos da linguagem</li>
+                <li>Manipulação do DOM</li>
+                <li>APIs e AJAX</li>
+                <li>Programação Assíncrona</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-      document.addEventListener("DOMContentLoaded", function () {
-        animarContador("contador", 10000, 2000); // 2 segundos
-      });
-    </script>
+        <!-- Terceiro card -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-header bg-success text-white">
+              Módulo 3: Framework
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mb-0">
+                <li>Bootstrap 5</li>
+                <li>React Básico</li>
+                <li>Node.js introduçãp</li>
+                <li>Projetos Práticos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-secondary text-white py-4">
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 CursoTech. Todos os direitos reservados</p>
+        <p class="mb-0">matheus.cbatista7@gmail.com | (11) 9600-2371</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

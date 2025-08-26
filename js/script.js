@@ -1,4 +1,4 @@
-// Animação
+// animação
 function animarContador(id, valorFinal, duracao) {
   const elemento = document.getElementById(id);
   let inicio = 0;
@@ -15,5 +15,5 @@ function animarContador(id, valorFinal, duracao) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  animarContador("contador", 10000, 4000); // 2 segundos
+  animarContador("contador", 10000, 4000); 
 });
